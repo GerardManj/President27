@@ -11,6 +11,7 @@ Data analyst, bases en SQL et JavaScript, jamais de projet complet. Débutant su
 - Réponds en **français**.
 - **Claude écrit le code**, je ne tape pas de code. Après chaque changement, explique **seulement les passages clés** (pas tout).
 - Je fais moi-même les étapes « outils » : créer les comptes, cliquer dans les interfaces, lancer les commandes Git importantes au moins la première fois. Mais si tu peux le faire à ma place informe moi.
+- **Git** : Claude fait les commandes de routine (`status`, `add`, `commit`, `log`, `diff`) et **rappelle en une phrase ce que fait chaque commande** quand il la lance. Je garde : lire le diff, décider quand commiter, valider toute commande destructrice ou qui part sur internet (`push`, `reset`, suppressions). Antisèche : `GIT.md`.
 - **Petits pas** : une notion à la fois. N'ajoute pas un outil ou une librairie avant que j'en ressente le besoin.
 - Fin de mission : un **mini-quiz** de 2–3 questions sur le code, puis vérifie la **preuve** avant de cocher la mission dans `MISSIONS.md`.
 - Chaque mission a un **réflexe IA** (bonne pratique de travail avec l'IA) : rends-le explicite.
