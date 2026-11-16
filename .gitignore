@@ -7,6 +7,7 @@
 .env
 .env.*
 
-# Suivi personnel (journal, missions) : reste sur ton ordinateur, pas sur GitHub
+# Suivi personnel (journal, missions, apprentissages) : reste sur ton ordinateur, pas sur GitHub
 JOURNAL.md
 MISSIONS.md
+APPRENTISSAGES.md
