@@ -7,6 +7,10 @@
 Chaque mission : 🎯 objectif · 🔍 code expliqué · 🧠 mini-quiz · 🤖 réflexe IA · ✅ preuve.
 Une mission est cochée seulement quand sa **preuve** est vérifiée. Les ⭐ quêtes bonus sont facultatives (+50 XP).
 
+## 📌 Pense-bête
+
+- [ ] **Mettre à jour la liste des candidats** (dans `index.html`, puis dans la table `candidats` à partir de J8). Source : [Wikipédia, « Candidatures à l'élection présidentielle française de 2027 »](https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027), tableau « Candidats déclarés ». Dernière version reprise : **13/11/2026** (29 candidats). La liste officielle (après les parrainages) sera publiée par le Conseil constitutionnel avant le 1er tour du 18/04/2027. Penser à changer aussi la date dans le pied de page.
+
 ---
 
 ## Semaine 1 — Mettre un site en ligne
