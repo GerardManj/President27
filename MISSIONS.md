@@ -1,6 +1,6 @@
 # 🗳️ President27 — Tableau de bord des missions
 
-**XP total : 250** · **Niveau : 🥚 Électeur indécis** (prochain niveau à 300)
+**XP total : 350** · **Niveau : 🐣 Militant du dimanche** (prochain niveau à 800)
 
 > Niveaux : 🥚 Électeur indécis (0) → 🐣 Militant du dimanche (300) → 🦅 Tracteur de tracts (800) → 🎤 Tribun du web (1500) → 🏛️ Président·e du code (2500)
 
@@ -14,7 +14,7 @@ Une mission est cochée seulement quand sa **preuve** est vérifiée. Les ⭐ qu
 - [x] **J1 · Hello, monde** (100 XP + ⭐ 50) ✅ 16/11 — `index.html` ouvert dans le navigateur, un texte modifié par toi. Réflexe IA : faire expliquer, créer `CLAUDE.md`.
   - ⭐ Bonus : ouvrir les outils de développement du navigateur (F12) et changer une couleur en direct.
 - [x] **J2 · Git local** (100 XP) ✅ 16/11 — `git log` avec ≥ 3 commits. Réflexe IA : relire chaque diff.
-- [ ] **J3 · GitHub** (100 XP) — code visible sur github.com. Réflexe IA : jamais de secret dans le chat.
+- [x] **J3 · GitHub** (100 XP) ✅ 16/11 — code visible sur github.com. Réflexe IA : jamais de secret dans le chat.
 - [ ] **J4 · Vercel** (150 XP) — URL `*.vercel.app` publique. Réflexe IA : faire diagnostiquer les logs d'erreur.
 - [ ] **J5 · Le jeu v0** (150 XP) — choisir un candidat → recevoir un défi, via une Pull Request. Réflexe IA : planifier avant de coder.
 - [ ] **J6 · Node & npm** (100 XP) — `npm run dev` + déploiement OK. Réflexe IA : vérifier dans la doc officielle.
@@ -50,5 +50,5 @@ Une mission est cochée seulement quand sa **preuve** est vérifiée. Les ⭐ qu
 | 🔀 Diplomate | Première Pull Request mergée | |
 | 🗄️ Archiviste | Première ligne en base | |
 | 🔐 Gardien | Auth fonctionnelle | |
-| 🧠 Sans faute | Un mini-quiz réussi à 100 % | |
+| 🧠 Sans faute | Un mini-quiz réussi à 100 % | ✅ 16/11 |
 | 🤖 Dompteur d'IA | Le bot satirique répond en ligne | |
