@@ -1,6 +1,6 @@
 # 🗳️ President27 — Tableau de bord des missions
 
-**XP total : 500** · **Niveau : 🐣 Militant du dimanche** (prochain niveau à 800)
+**XP total : 650** · **Niveau : 🐣 Militant du dimanche** (prochain niveau à 800)
 
 > Niveaux : 🥚 Électeur indécis (0) → 🐣 Militant du dimanche (300) → 🦅 Tracteur de tracts (800) → 🎤 Tribun du web (1500) → 🏛️ Président·e du code (2500)
 
@@ -20,7 +20,7 @@ Une mission est cochée seulement quand sa **preuve** est vérifiée. Les ⭐ qu
 - [x] **J2 · Git local** (100 XP) ✅ 16/11 — `git log` avec ≥ 3 commits. Réflexe IA : relire chaque diff.
 - [x] **J3 · GitHub** (100 XP) ✅ 16/11 — code visible sur github.com. Réflexe IA : jamais de secret dans le chat.
 - [x] **J4 · Vercel** (150 XP) ✅ 16/11 — URL `*.vercel.app` publique : https://president27.vercel.app. Réflexe IA : faire diagnostiquer les logs d'erreur.
-- [ ] **J5 · Le jeu v0** (150 XP) — choisir un candidat → recevoir un défi, via une Pull Request. Réflexe IA : planifier avant de coder.
+- [x] **J5 · Le jeu v0** (150 XP) ✅ 16/11 — choisir un candidat → recevoir un défi, via une Pull Request : PR #1 mergée, jeu en ligne sur https://president27.vercel.app. Réflexe IA : planifier avant de coder.
 - [ ] **J6 · Node & npm** (100 XP) — `npm run dev` + déploiement OK. Réflexe IA : vérifier dans la doc officielle.
 - [ ] **J7 · 👹 Boss : rétro & README** (200 XP) — README propre, journal à jour. Réflexe IA : code review par l'IA, tu tranches.
 
@@ -51,7 +51,7 @@ Une mission est cochée seulement quand sa **preuve** est vérifiée. Les ⭐ qu
 | 🏁 Premier pas | Terminer J1 | ✅ 16/11 |
 | 📸 Photographe | Premier commit | ✅ 16/11 |
 | 🌍 En ligne ! | Site public sur Vercel | ✅ 16/11 |
-| 🔀 Diplomate | Première Pull Request mergée | |
+| 🔀 Diplomate | Première Pull Request mergée | ✅ 16/11 |
 | 🗄️ Archiviste | Première ligne en base | |
 | 🔐 Gardien | Auth fonctionnelle | |
 | 🧠 Sans faute | Un mini-quiz réussi à 100 % | ✅ 16/11 |
