@@ -6,3 +6,7 @@
 # Secrets : clés d'API, mots de passe (on en aura à partir de Supabase)
 .env
 .env.*
+
+# Suivi personnel (journal, missions) : reste sur ton ordinateur, pas sur GitHub
+JOURNAL.md
+MISSIONS.md
