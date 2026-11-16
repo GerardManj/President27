@@ -28,11 +28,11 @@
 - Bloqué :
 - Question :
 
-## J5 · Le jeu v0 — __/__/____
+## J5 · Le jeu v0 — 16/11/2026
 
-- Appris :
+- Appris : Les différentes étapes pour créer une nouvelle branche et comment la merge avec la principale. Il faudra me répéter la séquence pour que je la mémorise bien si je suis ammené à le faire manuellement. Autrement j'ai compris que l'on peut créer des branches de travail permettant que de travailler sur un projet sans affecter le site en ligne directement.
 - Bloqué :
-- Question :
+- Question : Peut on créer plusieurs branches en même temps pour travailler sur plusieurs partie d'un projet ? 
 
 ## J6 · Node & npm — __/__/____
 
