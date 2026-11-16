@@ -1,0 +1,8 @@
+# Fichiers que Git doit ignorer (jamais photographiés, jamais envoyés sur GitHub)
+
+# Réglages locaux de Claude Code (propres à ta machine)
+.claude/settings.local.json
+
+# Secrets : clés d'API, mots de passe (on en aura à partir de Supabase)
+.env
+.env.*
