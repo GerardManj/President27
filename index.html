@@ -25,11 +25,33 @@
         font-size: 1.2rem;
         color: #252525;
       }
-      .bientot {
+      .jeu {
         margin-top: 40px;
         padding: 16px;
         border: 2px dashed #6d32a1;
         border-radius: 12px;
+      }
+      button {
+        font: inherit;
+        margin: 6px;
+        padding: 10px 16px;
+        border: 2px solid #6d32a1;
+        border-radius: 999px;
+        background: white;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #6d32a1;
+        color: white;
+      }
+      .defi {
+        font-size: 1.15rem;
+        font-weight: 600;
+        margin: 20px 0;
+      }
+      /* "hidden" = caché tant qu'aucun candidat n'est choisi */
+      [hidden] {
+        display: none;
       }
       footer {
         margin-top: 60px;
@@ -46,13 +68,84 @@
       Tu es sûr de ton candidat ? On va voir ça mon petit loup.
     </p>
 
-    <div class="bientot">
-      <p>🌍 Le site est en ligne… mais toujours en construction 🚧</p>
-      <p>Bientôt : choisis ton candidat, et on le met à l'épreuve.</p>
+    <div class="jeu">
+      <p>👇 Choisis ton candidat :</p>
+      <!-- Vide au départ : les boutons sont créés par le JavaScript plus bas -->
+      <div id="candidats"></div>
+
+      <div id="zone-defi" hidden>
+        <p class="defi" id="defi"></p>
+        <button id="autre-defi">🎲 Un autre défi</button>
+      </div>
     </div>
 
     <footer>
-      Satire équitable : tous les candidats en prennent pour leur grade.
+      Satire équitable : tous les candidats reçoivent exactement les mêmes défis.<br />
+      Ton choix reste dans ton navigateur : rien n'est envoyé ni enregistré.<br />
+      Liste des candidats déclarés selon
+      <a href="https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027">Wikipédia</a>,
+      au 13/11/2026.
     </footer>
+
+    <!-- Le JavaScript : le comportement de la page (ce qui se passe quand on clique) -->
+    <script>
+      // 1. Les données : une liste de candidats et une liste de défis.
+      //    En J8, ces deux listes partiront dans la base de données (Supabase).
+      //    Source : Wikipédia, « Candidatures à l'élection présidentielle française de 2027 »,
+      //    tableau « Candidats déclarés », version du 13/11/2026. Ordre alphabétique (équité).
+      const candidats = [
+        "Nathalie Arthaud", "François Asselineau", "Gabriel Attal", "Delphine Batho",
+        "Olivier Becht", "Xavier Bertrand", "Karim Bouamrane", "Nicolas Dupont-Aignan",
+        "Sylvain Durif", "Raphaël Glucksmann", "Anasse Kazib", "Selma Labib",
+        "Francis Lalanne", "Marine Le Pen", "David Lisnard", "Mira Markovic",
+        "Benoît Mathieu", "Jean-Luc Mélenchon", "Manolo Mlekuz", "Édouard Philippe",
+        "Florian Philippot", "Gilles Platret", "Natacha Polony", "Bruno Retailleau",
+        "Teddy Riner", "Fabien Roussel", "François Ruffin", "Marine Tondelier",
+        "Éric Zemmour",
+      ];
+
+      // {nom} sera remplacé par le nom du candidat choisi.
+      // On évite « de {nom} » : ça donnerait « de Édouard Philippe » au lieu de « d'Édouard ».
+      const defis = [
+        "{nom} a un programme. Cites-en 3 mesures sans regarder sur Internet.",
+        "Explique à ta grand-mère comment {nom} compte financer son programme. Tu as 1 minute.",
+        "Trouve une mesure proposée par {nom} avec laquelle tu n'es pas d'accord. Il y en a forcément une.",
+        "Résume en une phrase le projet porté par {nom}, sans les mots « changement », « ensemble » ni « France ».",
+        "Cite une promesse faite par {nom} et prouve qu'elle est réaliste. Avec des chiffres, s'il te plaît.",
+        "Donne le meilleur argument des opposants à {nom}, honnêtement et sans caricature.",
+        "Explique la première chose que fera {nom} le jour de son élection.",
+        "Convaincs un ami indécis de voter {nom} en 30 secondes, sans critiquer les autres candidats.",
+      ];
+
+      // 2. On récupère les éléments de la page qu'on va manipuler (grâce à leur id).
+      const zoneCandidats = document.getElementById("candidats");
+      const zoneDefi = document.getElementById("zone-defi");
+      const texteDefi = document.getElementById("defi");
+      const boutonAutreDefi = document.getElementById("autre-defi");
+
+      let candidatChoisi = null;
+
+      // 3. Tire un défi au hasard et l'affiche avec le nom du candidat.
+      function afficherDefi() {
+        const index = Math.floor(Math.random() * defis.length);
+        texteDefi.textContent = defis[index].replace("{nom}", candidatChoisi);
+        zoneDefi.hidden = false;
+        // Avec 29 boutons, le défi peut être hors de l'écran (surtout sur mobile) : on y descend.
+        zoneDefi.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+
+      // 4. Crée un bouton par candidat. Un clic = on retient le candidat et on lance un défi.
+      for (const nom of candidats) {
+        const bouton = document.createElement("button");
+        bouton.textContent = nom;
+        bouton.addEventListener("click", () => {
+          candidatChoisi = nom;
+          afficherDefi();
+        });
+        zoneCandidats.appendChild(bouton);
+      }
+
+      boutonAutreDefi.addEventListener("click", afficherDefi);
+    </script>
   </body>
 </html>

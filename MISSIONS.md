@@ -1,11 +1,15 @@
 # 🗳️ President27 — Tableau de bord des missions
 
-**XP total : 350** · **Niveau : 🐣 Militant du dimanche** (prochain niveau à 800)
+**XP total : 500** · **Niveau : 🐣 Militant du dimanche** (prochain niveau à 800)
 
 > Niveaux : 🥚 Électeur indécis (0) → 🐣 Militant du dimanche (300) → 🦅 Tracteur de tracts (800) → 🎤 Tribun du web (1500) → 🏛️ Président·e du code (2500)
 
 Chaque mission : 🎯 objectif · 🔍 code expliqué · 🧠 mini-quiz · 🤖 réflexe IA · ✅ preuve.
 Une mission est cochée seulement quand sa **preuve** est vérifiée. Les ⭐ quêtes bonus sont facultatives (+50 XP).
+
+## 📌 Pense-bête
+
+- [ ] **Mettre à jour la liste des candidats** (dans `index.html`, puis dans la table `candidats` à partir de J8). Source : [Wikipédia, « Candidatures à l'élection présidentielle française de 2027 »](https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027), tableau « Candidats déclarés ». Dernière version reprise : **13/11/2026** (29 candidats). La liste officielle (après les parrainages) sera publiée par le Conseil constitutionnel avant le 1er tour du 18/04/2027. Penser à changer aussi la date dans le pied de page.
 
 ---
 
@@ -15,7 +19,7 @@ Une mission est cochée seulement quand sa **preuve** est vérifiée. Les ⭐ qu
   - ⭐ Bonus : ouvrir les outils de développement du navigateur (F12) et changer une couleur en direct.
 - [x] **J2 · Git local** (100 XP) ✅ 16/11 — `git log` avec ≥ 3 commits. Réflexe IA : relire chaque diff.
 - [x] **J3 · GitHub** (100 XP) ✅ 16/11 — code visible sur github.com. Réflexe IA : jamais de secret dans le chat.
-- [ ] **J4 · Vercel** (150 XP) — URL `*.vercel.app` publique. Réflexe IA : faire diagnostiquer les logs d'erreur.
+- [x] **J4 · Vercel** (150 XP) ✅ 16/11 — URL `*.vercel.app` publique : https://president27.vercel.app. Réflexe IA : faire diagnostiquer les logs d'erreur.
 - [ ] **J5 · Le jeu v0** (150 XP) — choisir un candidat → recevoir un défi, via une Pull Request. Réflexe IA : planifier avant de coder.
 - [ ] **J6 · Node & npm** (100 XP) — `npm run dev` + déploiement OK. Réflexe IA : vérifier dans la doc officielle.
 - [ ] **J7 · 👹 Boss : rétro & README** (200 XP) — README propre, journal à jour. Réflexe IA : code review par l'IA, tu tranches.
@@ -46,7 +50,7 @@ Une mission est cochée seulement quand sa **preuve** est vérifiée. Les ⭐ qu
 |---|---|---|
 | 🏁 Premier pas | Terminer J1 | ✅ 16/11 |
 | 📸 Photographe | Premier commit | ✅ 16/11 |
-| 🌍 En ligne ! | Site public sur Vercel | |
+| 🌍 En ligne ! | Site public sur Vercel | ✅ 16/11 |
 | 🔀 Diplomate | Première Pull Request mergée | |
 | 🗄️ Archiviste | Première ligne en base | |
 | 🔐 Gardien | Auth fonctionnelle | |
