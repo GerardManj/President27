@@ -11,3 +11,9 @@
 JOURNAL.md
 MISSIONS.md
 APPRENTISSAGES.md
+
+# Outils téléchargés par npm (se réinstallent avec `npm install`, ne vont jamais dans Git)
+node_modules/
+
+# Site « fabriqué » par `npm run build` (Vercel le refabrique lui-même)
+dist/
